@@ -68,7 +68,7 @@ section{
   display: flex;
 }	 
 .testi-avatar img{
-	width: 350px; 	
+	width: 300px; 	
 }
 .swiper-slide-active .testi-item{
 	opacity: 1;
