@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+html{
+	overflow-x: hidden;
+	overflow-y: hidden;
+	height: 100%;
+}
+ *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+} 
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-size: 13px;
+	text-align: center;
+	font-family: "Roboto";
+	background: #331327;
+}
+
+section{
+	padding: 50px 0;  	
+}
+
+.listing-carousel-button{
+	position: absolute;
+	top: 50%;
+	width: 80px;
+	height: 50px;
+	line-height: 50px;
+	margin-top: -25px; 
+	z-index: 100;
+	cursor: pointer;
+	background: #b1965e;
+	box-shadow: 0 9px 26px #20201f;
+	transition: all 200ms linear;
+	outline: none;
+}
+.listing-carousel-button.listing-carousel-button-next{
+	right: -30px;
+	padding-right: 20px;
+	border-radius: 60px 0 0 60px;
+}
+.listing-carousel-button.listing-carousel-button-prev{
+	left: -30px;
+	padding-left: 20px;
+	border-radius: 0 60px 60px 0;
+}
+.listing-carousel-button.listing-carousel-button-next:hover{
+	right: -15px;
+	background: #644e22;
+}
+.listing-carousel-button.listing-carousel-button-prev:hover{
+	left: -15px;
+	background:#644e22;
+}
+.testi-item {
+	transition: all .3s ease-in-out;
+	transform: scale(0.9);
+	opacity: 0.8;
+}
+
+.testimonials-carousel .swiper-slide{
+	padding: 120px;
+  display: flex;
+}	 
+.testi-avatar img{
+	width: 350px; 	
+}
+.swiper-slide-active .testi-item{
+	opacity: 1;
+	transform: scale(1.0);
+}
+.swiper-slide-active .testi-avatar img{
+    transition: all .3s ease-in-out;
+	transform: scale(1.5);
+    position:absolute;
+    z-index: 30;
+}
+
+.tc-pagination{
+	float: left; 
+	margin-top: 10px;
+	width: 100% !important;
+}
+.tc-pagination_wrap {
+	position: absolute;
+  height: 100vh;
+	left: 0;
+	width: 100%;
+}
+
+.tc-pagination .swiper-pagination-bullet, .tc-pagination2.swiper-pagination-bullet{
+	opacity: 1;
+	background: #b1965e;
+	margin:0 2px;
+	width: 10px;
+	height: 10px;
+	transition: all 300ms ease-in-out;
+}
+
